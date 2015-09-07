@@ -1,0 +1,45 @@
+.comment.css {
+  color: @purple;
+}
+
+.name.tag.css {
+  color: @blue;
+}
+
+.entity {
+  &.attribute-name {
+    &.css {
+      color: @green;
+    }
+
+    &.pseudo-class.css {
+      color: @orange;
+    }
+
+    &.pseudo-element {
+      color: @orange;
+    }
+  }
+}
+
+.property-name.css {
+  color: @yellow;
+}
+
+.property-value.css, .punctuation.css:not(.comment):not(.keyword) {
+  color: @syntax-text-color !important;
+}
+
+.important.css {
+  color: @red;
+}
+
+.variable {
+  &.other.css {
+    color: @orange;
+  }
+}
+
+.at-rule {
+  color: @red;
+}

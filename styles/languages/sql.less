@@ -1,0 +1,23 @@
+.sql:not(.php) {
+  .comment.sql, .comment {
+    color: @purple;
+  }
+
+  .keyword {
+    &.other.sql {
+      color: @blue;
+    }
+
+    &.operator {
+      color: @syntax-text-color;
+    }
+  }
+
+  .string.sql {
+    color: @green;
+  }
+
+  .numeric.sql {
+    color: @red;
+  }
+}

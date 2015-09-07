@@ -1,0 +1,20 @@
+{
+  "name": "jextious-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A colorful yet readable theme based on the primary colors.",
+  "keywords": [
+    "syntax",
+    "theme",
+    "colorful",
+    "php",
+    "html",
+    "javascript",
+    "css"
+  ],
+  "repository": "https://github.com/jextious/jextious-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

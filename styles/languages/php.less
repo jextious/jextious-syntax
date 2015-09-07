@@ -1,0 +1,65 @@
+.punctuation {
+  &.section {
+    &.embedded.php {
+      color: @red;
+    }
+  }
+}
+
+.keyword {
+  &.control.php {
+    color: @blue;
+  }
+
+  &.operator.php {
+    color: @syntax-text-color;
+  }
+
+  &.sql.php {
+    color: @green;
+  }
+}
+
+.comment.php, .phpdoc.php {
+  color: @purple;
+}
+
+.constant {
+  &.language.php {
+    color: @blue;
+  }
+
+  &.numeric.php {
+    color: @red;
+  }
+}
+
+.string.php, &.string-contents.php {
+  color: @green;
+}
+
+.support {
+  &.function.php:not(.magic) {
+    color: @blue;
+  }
+
+  &.constant.php {
+    color: @blue;
+  }
+}
+
+.variable {
+  &.php {
+    color: @yellow;
+  }
+
+  &.other.property.php {
+    color: @syntax-text-color;
+  }
+}
+
+.storage {
+  &.function.php, &.modifier.php, &.class.php {
+    color: @blue;
+  }
+}

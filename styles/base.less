@@ -1,0 +1,187 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+    margin-right: 8px;
+
+    .line-number {
+      &.cursor-line {
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
+      }
+
+      &.cursor-line-no-selection {
+        color: @syntax-gutter-text-color-selected;
+      }
+    }
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @light-gray;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+}
+
+atom-text-editor .search-results .marker .region,
+:host .search-results .marker .region {
+  background-color: transparent;
+  border: 1px solid @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region,
+:host .search-results .marker.current-result .region {
+  border: 1px solid @syntax-result-marker-color-selected;
+}
+
+.invalid.illegal {
+  background-color: @red;
+  color: @syntax-background-color;
+}
+
+.bracket-matcher .region {
+  -webkit-animation: rainbow 1s infinite linear;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    border: 1px dotted hsl(0, 60%, 60%);
+  }
+  2.7777777777778% {
+    border: 1px dotted hsl(10, 60%, 60%);
+  }
+  5.5555555555556% {
+    border: 1px dotted hsl(20, 60%, 60%);
+  }
+  8.3333333333333% {
+    border: 1px dotted hsl(30, 60%, 60%);
+  }
+  11.111111111111% {
+    border: 1px dotted hsl(40, 60%, 60%);
+  }
+  13.888888888889% {
+    border: 1px dotted hsl(50, 60%, 60%);
+  }
+  16.666666666667% {
+    border: 1px dotted hsl(60, 60%, 60%);
+  }
+  19.444444444444% {
+    border: 1px dotted hsl(70, 60%, 60%);
+  }
+  22.222222222222% {
+    border: 1px dotted hsl(80, 60%, 60%);
+  }
+  25% {
+    border: 1px dotted hsl(90, 60%, 60%);
+  }
+  27.777777777778% {
+    border: 1px dotted hsl(100, 60%, 60%);
+  }
+  30.555555555556% {
+    border: 1px dotted hsl(110, 60%, 60%);
+  }
+  33.333333333333% {
+    border: 1px dotted hsl(120, 60%, 60%);
+  }
+  36.111111111111% {
+    border: 1px dotted hsl(130, 60%, 60%);
+  }
+  38.888888888889% {
+    border: 1px dotted hsl(140, 60%, 60%);
+  }
+  41.666666666667% {
+    border: 1px dotted hsl(150, 60%, 60%);
+  }
+  44.444444444444% {
+    border: 1px dotted hsl(160, 60%, 60%);
+  }
+  47.222222222222% {
+    border: 1px dotted hsl(170, 60%, 60%);
+  }
+  50% {
+    border: 1px dotted hsl(180, 60%, 60%);
+  }
+  52.777777777778% {
+    border: 1px dotted hsl(190, 60%, 60%);
+  }
+  55.555555555556% {
+    border: 1px dotted hsl(200, 60%, 60%);
+  }
+  58.333333333333% {
+    border: 1px dotted hsl(210, 60%, 60%);
+  }
+  61.111111111111% {
+    border: 1px dotted hsl(220, 60%, 60%);
+  }
+  63.888888888889% {
+    border: 1px dotted hsl(230, 60%, 60%);
+  }
+  66.666666666667% {
+    border: 1px dotted hsl(240, 60%, 60%);
+  }
+  69.444444444444% {
+    border: 1px dotted hsl(250, 60%, 60%);
+  }
+  72.222222222222% {
+    border: 1px dotted hsl(260, 60%, 60%);
+  }
+  75% {
+    border: 1px dotted hsl(270, 60%, 60%);
+  }
+  77.777777777778% {
+    border: 1px dotted hsl(280, 60%, 60%);
+  }
+  80.555555555556% {
+    border: 1px dotted hsl(290, 60%, 60%);
+  }
+  83.333333333333% {
+    border: 1px dotted hsl(300, 60%, 60%);
+  }
+  86.111111111111% {
+    border: 1px dotted hsl(310, 60%, 60%);
+  }
+  88.888888888889% {
+    border: 1px dotted hsl(320, 60%, 60%);
+  }
+  91.666666666667% {
+    border: 1px dotted hsl(330, 60%, 60%);
+  }
+  94.444444444444% {
+    border: 1px dotted hsl(340, 60%, 60%);
+  }
+  97.222222222222% {
+    border: 1px dotted hsl(350, 60%, 60%);
+  }
+  100% {
+    border: 1px dotted hsl(0, 60%, 60%);
+  }
+}

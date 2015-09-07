@@ -1,0 +1,33 @@
+.entity {
+  &.name.tag.html {
+    color: @blue;
+  }
+
+  &.attribute-name.html {
+    color: @yellow;
+  }
+}
+
+.punctuation.tag.html {
+  color: @blue;
+}
+
+.comment.html {
+  color: @purple;
+}
+
+.string.html {
+  color: @green;
+}
+
+.html .embedded:not(.sql) {
+  color: @syntax-text-color;
+
+  .doctype {
+    color: @blue;
+  }
+}
+
+.doctype.html {
+  color: @blue;
+}
