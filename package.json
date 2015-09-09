@@ -7,10 +7,15 @@
     "syntax",
     "theme",
     "colorful",
-    "php",
     "html",
     "javascript",
-    "css"
+    "css",
+    "php",
+    "json",
+    "sql",
+    "c",
+    "c++",
+    "less"
   ],
   "repository": "https://github.com/jextious/jextious-syntax",
   "license": "MIT",
