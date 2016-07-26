@@ -2,10 +2,6 @@
   color: @purple;
 }
 
-.storage.js {
-  color: @blue;
-}
-
 .keyword {
   &.control.js {
     color: @blue;
@@ -24,7 +20,7 @@
   color: @red;
 }
 
-.boolean.js {
+.boolean.js, .storage.js, .variable.language.js {
   color: @blue;
 }
 
@@ -32,6 +28,7 @@
   color: @green;
 }
 
-.regexp.js, .regexp .punctuation.js {
+.regexp.js, .regexp .punctuation.js, .brace.js,
+.scope.begin.js, .scope.end.js {
   color: @yellow;
 }
