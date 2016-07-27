@@ -11,7 +11,7 @@ A colorful yet readable theme based on the primary colors.
 ![css](http://i.imgur.com/CMRRHY0.png)
 
 ### JavaScript
-![javascript](http://i.imgur.com/xNzAiIq.png)
+![javascript](http://i.imgur.com/i6wwf1h.png)
 
 ### PHP
 ![php](http://i.imgur.com/ed9wTZ1.png)
