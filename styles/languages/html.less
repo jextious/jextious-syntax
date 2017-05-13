@@ -1,33 +1,33 @@
-.entity {
-  &.name.tag.html {
+.syntax--entity {
+  &.syntax--name.syntax--tag.syntax--html {
     color: @blue;
   }
 
-  &.attribute-name.html {
+  &.syntax--attribute-name.syntax--html {
     color: @yellow;
   }
 }
 
-.punctuation.tag.html {
+.syntax--punctuation.syntax--tag.syntax--html {
   color: @blue;
 }
 
-.comment.html {
+.syntax--comment.syntax--html {
   color: @purple;
 }
 
-.string.html {
+.syntax--string.syntax--html {
   color: @green;
 }
 
-.html .embedded:not(.sql) {
+.syntax--html .syntax--embedded:not(.syntax--sql) {
   color: @syntax-text-color;
 
-  .doctype {
+  .syntax--doctype {
     color: @blue;
   }
 }
 
-.doctype.html {
+.syntax--doctype.syntax--html {
   color: @blue;
 }

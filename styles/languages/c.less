@@ -1,25 +1,27 @@
-.keyword.c {
+.syntax--keyword.syntax--c {
   color: @blue;
 }
 
-.storage {
-  &.type.c {
+.syntax--storage {
+  &.syntax--type.syntax--c {
     color: @blue;
   }
 }
 
-.string.c {
+.syntax--string.syntax--c {
   color: @green;
 }
 
-.preprocessor.c, .preprocessor .keyword.c, .preprocessor .string.c {
+.syntax--preprocessor.syntax--c,
+.syntax--preprocessor .syntax--keyword.syntax--c,
+.syntax--preprocessor .syntax--string.syntax--c {
   color: @yellow;
 }
 
-.numeric.c {
+.syntax--numeric.syntax--c {
   color: @red;
 }
 
-.cpp .comment {
+.syntax--cpp .syntax--comment {
   color: @purple;
 }

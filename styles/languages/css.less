@@ -1,45 +1,47 @@
-.comment.css {
+.syntax--comment.syntax--css {
   color: @purple;
 }
 
-.name.tag.css {
+.syntax--name.syntax--tag.syntax--css {
   color: @blue;
 }
 
-.entity {
-  &.attribute-name {
-    &.css {
+.syntax--entity {
+  &.syntax--attribute-name {
+    &.syntax--css {
       color: @green;
     }
 
-    &.pseudo-class.css {
+    &.syntax--pseudo-class.syntax--css {
       color: @orange;
     }
 
-    &.pseudo-element {
+    &.syntax--pseudo-element {
       color: @orange;
     }
   }
 }
 
-.property-name.css {
+.syntax--property-name.syntax--css {
   color: @yellow;
 }
 
-.property-value.css, .punctuation.css:not(.comment):not(.keyword) {
+.syntax--property-value.syntax--css,
+.syntax--punctuation.syntax--css:not(.syntax--comment):not(.syntax--keyword) {
   color: @syntax-text-color !important;
 }
 
-.important.css {
+.syntax--important.syntax--css {
   color: @red;
 }
 
-.variable {
-  &.other.css {
+.syntax--variable {
+  &.syntax--other.syntax--css {
     color: @orange;
   }
 }
 
-.at-rule.css, .at-rule .punctuation.definition.string.css {
+.syntax--at-rule.syntax--css,
+.syntax--at-rule .syntax--punctuation.syntax--string.syntax--css {
   color: @red !important;
 }

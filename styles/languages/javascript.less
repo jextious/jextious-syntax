@@ -1,36 +1,40 @@
-.comment.js {
+.syntax--comment.syntax--js {
   color: @purple;
 }
 
-.keyword {
-  &.control.js {
+.syntax--keyword {
+  &.syntax--control.syntax--js {
     color: @blue;
   }
 
-  &.operator.js {
+  &.syntax--operator.syntax--js {
     color: @yellow;
   }
 
-  &.new.js {
+  &.syntax--new.syntax--js {
     color: @blue;
   }
 }
 
-.numeric.js {
+.syntax--numeric.syntax--js {
   color: @red;
 }
 
-.boolean.js, .storage.js, .variable.language.js {
+.syntax--boolean.syntax--js, .syntax--storage.syntax--js,
+.syntax--variable.syntax--language.syntax--js {
   color: @blue;
 }
 
-.string.js {
+.syntax--string.syntax--js {
   color: @green;
 }
 
-.regexp.js, .regexp .punctuation.js, .brace.js,
-.scope.begin.js, .scope.end.js,
-.parameters.begin.js, .parameters.end.js,
-.arguments.begin.js, .arguments.end.js {
+.syntax--regexp.syntax--js, .syntax--regexp .syntax--punctuation.syntax--js,
+.syntax--brace.syntax--js, .syntax--scope.syntax--begin.syntax--js,
+.syntax--scope.syntax--end.syntax--js,
+.syntax--parameters.syntax--begin.syntax--js,
+.syntax--parameters.syntax--end.syntax--js,
+.syntax--arguments.syntax--begin.syntax--js,
+.syntax--arguments.syntax--end.syntax--js {
   color: @yellow;
 }

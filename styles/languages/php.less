@@ -1,65 +1,66 @@
-.punctuation {
-  &.section {
-    &.embedded.php {
+.syntax--punctuation {
+  &.syntax--section {
+    &.syntax--embedded.syntax--php {
       color: @red;
     }
   }
 }
 
-.keyword {
-  &.control.php {
+.syntax--keyword {
+  &.syntax--control.syntax--php {
     color: @blue;
   }
 
-  &.operator.php {
+  &.syntax--operator.syntax--php {
     color: @syntax-text-color;
   }
 
-  &.sql.php {
+  &.syntax--sql.syntax--php {
     color: @green;
   }
 }
 
-.comment.php, .phpdoc.php {
+.syntax--comment.syntax--php, .syntax--phpdoc.syntax--php {
   color: @purple;
 }
 
-.constant {
-  &.language.php {
+.syntax--constant {
+  &.syntax--language.syntax--php {
     color: @blue;
   }
 
-  &.numeric.php {
+  &.syntax--numeric.syntax--php {
     color: @red;
   }
 }
 
-.string.php, &.string-contents.php {
+.syntax--string.syntax--php, &.string-contents.syntax--php {
   color: @green;
 }
 
-.support {
-  &.function.php:not(.magic) {
+.syntax--support {
+  &.syntax--function.syntax--php:not(.syntax--magic) {
     color: @blue;
   }
 
-  &.constant.php {
+  &.syntax--constant.syntax--php {
     color: @blue;
   }
 }
 
-.variable {
-  &.php {
+.syntax--variable {
+  &.syntax--php {
     color: @yellow;
   }
 
-  &.other.property.php {
+  &.syntax--other.syntax--property.syntax--php {
     color: @syntax-text-color;
   }
 }
 
-.storage {
-  &.function.php, &.modifier.php, &.class.php {
+.syntax--storage {
+  &.syntax--function.syntax--php, &.syntax--modifier.syntax--php,
+  &.syntax--class.syntax--php {
     color: @blue;
   }
 }

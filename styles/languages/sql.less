@@ -1,23 +1,23 @@
-.sql:not(.php) {
-  .comment.sql, .comment {
+.syntax--sql:not(.syntax--php) {
+  .syntax--comment.syntax--sql, .syntax--comment {
     color: @purple;
   }
 
-  .keyword {
-    &.other.sql {
+  .syntax--keyword {
+    &.syntax--other.syntax--sql {
       color: @blue;
     }
 
-    &.operator {
+    &.syntax--operator {
       color: @syntax-text-color;
     }
   }
 
-  .string.sql {
+  .syntax--string.syntax--sql {
     color: @green;
   }
 
-  .numeric.sql {
+  .syntax--numeric.syntax--sql {
     color: @red;
   }
 }
